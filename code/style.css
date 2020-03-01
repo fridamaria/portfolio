@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+}
+
+h1, h2 {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  grid-column-start: 1;
+  grid-row-start: 3;
+  margin: 0;
+  padding: 4.5px 0;
+}
+
+h2 {
+  font-size: 24px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  margin: 0;
+  padding-top: 1px;
+}
+
+h3 {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*** HEADER ***/
+
+header {
+  display: grid;
+  grid-template-columns: 99px 198px;
+  grid-template-rows: repeat(5, auto);
+  height: 403px;
+  padding: 105px 37px 0 41px;
+  background: linear-gradient(#17030370, #17030370), url(./assets/anna-sullivan-ARrM9jUl780-unsplash.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.social-media {
+  display: flex;
+  grid-column-start: 2;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-left: 5px;
+  width: 36px;
+  height: 36px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+}
+
+.portfolio {
+  grid-column-start: 1;
+  font-weight: 400;
+}
+
+.name {
+  grid-column-start: 2;
+  font-weight: 700;
+}
+
+.portfolio, .name {
+  grid-column-end: 3;
+  grid-row-start: 2;
+  padding: 32px 0 0 0;
+  margin: 0;
+  font-size: 13px;
+}
+
+.profile {
+  grid-column-start: 2;
+  grid-row-start: 5;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding-top: 34px;
+}
+
+.profile img {
+  width: 156px;
+  height: 156px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+}
