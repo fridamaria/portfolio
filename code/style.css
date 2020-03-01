@@ -32,17 +32,24 @@ h3 {
 /*** HEADER ***/
 
 header {
-  display: grid;
-  grid-template-columns: 99px 198px;
-  grid-template-rows: repeat(5, auto);
-  height: 403px;
-  padding: 105px 37px 0 41px;
-  background: linear-gradient(#17030370, #17030370), url(./assets/anna-sullivan-ARrM9jUl780-unsplash.jpg);
+  height: 508px;
+  margin: 0;
+  background-image: url(./assets/anna-sullivan-ARrM9jUl780-unsplash.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.profile-introduction {
+  display: grid;
+  grid-template-columns: 99px 198px;
+  grid-template-rows: repeat(5, auto);
+  height: 403px;
+  padding: 105px 37px 0 41px;
+  background: #17030380;
+  background: rgba(23, 3, 3, 0.5);
 }
 
 .social-media {
@@ -61,6 +68,11 @@ header {
   height: 36px;
   border: 3px solid #ffffff;
   border-radius: 50%;
+}
+
+.icon-container img {
+  width: 19px;
+  height: auto;
 }
 
 .portfolio {
