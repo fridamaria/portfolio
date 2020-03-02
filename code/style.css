@@ -17,7 +17,7 @@ h1 {
   grid-column-start: 1;
   grid-row-start: 3;
   margin: 0;
-  padding: 4.5px 0;
+  padding: 4px 0;
 }
 
 h2 {
@@ -45,6 +45,10 @@ h5 {
   font-size: 21px;
 }
 
+h6, p {
+  color: #000000;
+}
+
 p {
   font-family: 'Montserrat', sans-serif;
   font-size: 17px;
@@ -69,6 +73,8 @@ header {
 
 .profile-key-words {
   display: grid;
+  justify-content: center;
+  margin: 0 auto;
   grid-template-columns: 99px 198px;
   grid-template-rows: repeat(5, auto);
   height: 403px;
@@ -139,6 +145,11 @@ main {
   text-align: center;
 }
 
+.summary, .tech-listing, .skill-lists, .project-container, .project-container-small, .thought-container, .thought-container-small {
+  margin: 0 auto;
+  max-width: 310px;
+}
+
 .portfolio-container {
   padding: 58px 36px;
 }
@@ -147,19 +158,19 @@ main {
   background: #F4F4F4;
 }
 
-.summary, .project-container, .thought {
+.summary, .project-container, .project-container-small, .thought {
   text-align: left;
 }
 
 /*** SUMMARY ***/
 
 .line-symbol {
-  margin-right: 10px;
+  margin-right: 15px;
   position: relative;
   float: left;
-  top: 8px;
+  top: 10px;
   width: 50px;
-  height: 3px;
+  height: 2px;
   background: #FA382F;
 }
 
@@ -169,7 +180,7 @@ main {
   width: 10px;
   position: relative;
   float: right;
-  top: -3px;
+  top: -4px;
   right: -1px;
   border-radius: 50%;
   background: #FA382F;
@@ -184,17 +195,15 @@ main {
 
 /*** PROJECTS ***/
 
-.project-container {
-  margin-top: 34px;
-}
-
 .project-1-image {
   display: flex;
   justify-content: center;
+  margin-top: 34px;
   width: 100%;
   height: 179px;
   background-image: url(./assets/Project.png);
   background-repeat: no-repeat;
+  background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -247,28 +256,53 @@ main {
 
 .thoughts-text-content {
   line-height: 32px;
-  margin: auto 5px;
-  
 }
 
-.thoughts-date {
+.thoughts-date, .thoughts-date-small {
   margin: 0;
   padding-top: 10px;
   color: #FA382F;
+  font-family: 'Roboto', sans-serif;
   font-size: 17px;
 }
 
-.thoughts-title {
+.thoughts-title, .thoughts-title-small {
   margin: 0;
   padding: 0;
-  font-size: 21px;
   font-weight: 700;
+}
+
+.thoughts-title {
+  font-size: 21px;
+}
+
+.thoughts-title-small {
+  font-size: 17px;
 }
 
 .thoughts-intro {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
+}
+
+.thought-small {
+  text-align: left;
+}
+
+.thoughts-text-content-small {
+  margin-top: 25px;
+}
+
+.thoughts-date-small, .thoughts-title-small, .link-arrows-small {
+  display: inline;
+}
+
+.link-arrows-small {
+  color: #FA382F;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
 }
 
 /*** SKILLS ***/
@@ -309,7 +343,8 @@ ul[title]::before {
 .social-media-2 {
   display: flex;
   justify-content: space-between;
-  margin-top: 33px;
+  max-width: 310px;
+  margin: 33px auto 0 auto;
   padding: 0 21px;
 }
 
@@ -348,8 +383,10 @@ ul[title]::before {
 /*** FOOTER ***/
 
 footer {
-  height: 183px;
-  padding: 63px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 266px;
   background: #072BCE;
   text-align: center;
 }
@@ -357,12 +394,14 @@ footer {
 footer h4 {
   font-size: 21px;
   background: none;
+  margin: 0;
 }
 
 .author-name, .contact-details {
   color: #ffffff;
   font-size: 17px;
   margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .author-name {
@@ -372,7 +411,12 @@ footer h4 {
 
 /*** MEDIA QUERIES ***/
 
-@media (min-width: 668px) {
+@media (min-width: 550px) {
+
+  .profile-key-words {
+    grid-template-columns: 80px 65%;
+    padding: 105px 10% 0 10%;
+  }
 
 }
 
@@ -390,6 +434,14 @@ footer h4 {
     padding-bottom: 80px;
   }
 
+  h4 {
+    font-size: 48px;
+  }
+
+  h5 {
+    font-size: 38px;
+  }
+
   .portfolio, .name {
     font-size: 28px;
     align-self: end;
@@ -401,8 +453,6 @@ footer h4 {
   }
 
   .profile-key-words {
-    justify-content: center;
-    margin: 0 auto;
     grid-template-columns: 218px 870px;
     height: 570px;
     padding: 105px 10% 0 10%;
@@ -446,22 +496,47 @@ footer h4 {
     font-size: 28px;
   }
 
-  .summary, .tech-listing, .skill-lists {
+  .summary, .tech-listing, .skill-lists, .project-container, .project-container-small, .thought-container, .thought-container-small {
     margin: 0 auto;
     padding: 50px 10%;
     max-width: 1088px;
   }
 
-  .project-container, .thought {
-    max-width: 544px;
+  .project-title, .project-description {
+    font-size: 25px;
+  }
+
+  .code-tag {
+    font-size: 16px;
   }
 
   .summary, .tech-listing {
     font-size: 30px;
   }
 
-  .skill-lists {
+  .project-container, .thought-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
 
+  .project-card, .thought {
+    width: 45%
+  }
+
+  .project-1-image, .thought img {
+    height: 280px;
+  }
+
+  .thoughts-text-content {
+    line-height: 41px;
+  }
+
+  .thoughts-title {
+    font-size: 30px;
+  }
+
+  .thoughts-date, .thoughts-date-small, .thoughts-intro, .thoughts-title-small, .link-arrows, .link-arrows-small {
+    font-size: 25px;
   }
 
   ul {
@@ -478,4 +553,41 @@ footer h4 {
     padding: 50px 10%;
     max-width: 1088px;
   }
+
+  .icon-container-more {
+    width: 154px;
+    height: 154px;
+  }
+
+  .icon-container-more img {
+    width: 60px;
+    height: auto;
+  }
+
+  .link-name {
+    font-size: 25px;
+  }
+
+  footer {
+    height: 570px;
+  }
+
+  footer h4 {
+    font-size: 38px;
+  }
+
+  .author-name, .contact-details {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .author-name {
+    padding-top: 30px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1450px) {
+
 }
