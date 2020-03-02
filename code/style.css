@@ -1,3 +1,5 @@
+/*** GLOBAL STYLING ***/
+
 body {
   margin: 0;
 }
@@ -27,7 +29,7 @@ h2 {
   padding-top: 1px;
 }
 
-h3 {
+h3, h6 {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -48,6 +50,10 @@ p {
   font-size: 17px;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*** HEADER ***/
 
 header {
@@ -66,7 +72,7 @@ header {
   grid-template-columns: 99px 198px;
   grid-template-rows: repeat(5, auto);
   height: 403px;
-  padding: 105px 37px 0 41px;
+  padding: 105px 36px 0 36px;
   background: rgba(23, 3, 3, 0.5);
 }
 
@@ -77,7 +83,7 @@ header {
   justify-content: flex-end;
 }
 
-.icon-container {
+.icon-link {
   display: flex;
   justify-content: center;
   margin: 0;
@@ -88,7 +94,7 @@ header {
   border-radius: 50%;
 }
 
-.icon-container img {
+.icon-link img {
   width: 19px;
   height: auto;
 }
@@ -127,42 +133,150 @@ header {
   border-radius: 50%;
 }
 
-/*** SUMMARY ***/
+/*** MAIN SECTION ***/
 
 main {
   text-align: center;
 }
 
-.summary, .tech, .projects, .thoughts, .skills, .more, .contact {
+.portfolio-container {
   padding: 58px 36px;
 }
 
-.summary, .projects, .skills {
+.primary {
   background: #F4F4F4;
 }
 
-.summary {
-  /* padding: 58px 36.5px 56px 36.5px; */
+.summary, .project-container, .thought {
   text-align: left;
 }
 
-/* .tech {
-  padding: 59.5px 36px;
-} */
+/*** SUMMARY ***/
 
-.tech p {
-  margin-top: 33.8px;
+.line-symbol {
+  margin-right: 10px;
+  position: relative;
+  float: left;
+  top: 8px;
+  width: 50px;
+  height: 3px;
+  background: #FA382F;
 }
 
-.projects {
-  /* padding-top: 57px; */
-  padding-bottom: 90.5px;
+.line-symbol::after {
+  content: '';
+  height: 10px;
+  width: 10px;
+  position: relative;
+  float: right;
+  top: -3px;
+  right: -1px;
+  border-radius: 50%;
+  background: #FA382F;
 }
+
+/*** TECH ***/
+
+.tech-listing {
+  margin-top: 34px;
+  text-align: center;
+}
+
+/*** PROJECTS ***/
+
+.project-container {
+  margin-top: 34px;
+}
+
+.project-1-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 179px;
+  background-image: url(./assets/Project.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: inset 0 0 0 100vmax rgba(23, 3, 3, 0.5);
+}
+
+.project-title {
+  padding-top: 20%;
+  color: #FDDFE7;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.project-description {
+  margin-top: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
+
+.featured-project, .link-arrows {
+  color: #FA382F;
+  font-weight: 700;
+}
+
+.featured-sentence {
+  color: #000000;
+}
+
+.code-tag-container {
+  display: flex;
+}
+
+.code-tag {
+  margin: 20px 4px 9px 0;
+  padding: 4px 8px;
+  background: #FDDFE7;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 9px;
+}
+
+/*** THOUGHTS ***/
+
+.thought img {
+  width: 100%;
+  height: 179px;
+  margin-top: 34px;
+}
+
+.thoughts-text-content {
+  line-height: 32px;
+  margin: auto 5px;
+  
+}
+
+.thoughts-date {
+  margin: 0;
+  padding-top: 10px;
+  color: #FA382F;
+  font-size: 17px;
+}
+
+.thoughts-title {
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.thoughts-intro {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
+
+/*** SKILLS ***/
 
 .skill-lists {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 34.5px;
+  padding-top: 34px;
 }
 
 ul {
@@ -172,6 +286,7 @@ ul {
   list-style-type: none;
   margin: 0 0 30px 0;
   padding: 0;
+  text-align: center;
 }
 
 li {
@@ -189,15 +304,13 @@ ul[title]::before {
   text-align: center;
 }
 
-.more {
-  padding-bottom: 0;
-}
+/*** LINKS FOR MORE INFO ***/
 
 .social-media-2 {
   display: flex;
   justify-content: space-between;
-  margin-top: 33.5px;
-  padding: 0 21.5px;
+  margin-top: 33px;
+  padding: 0 21px;
 }
 
 .social-media-2 a {
@@ -205,7 +318,6 @@ ul[title]::before {
   flex-direction: column;
   align-items: center;
   width: 33%;
-  text-decoration: none;
 }
 
 .icon-container-more {
@@ -220,7 +332,7 @@ ul[title]::before {
 
 .link-name {
   margin: 0;
-  padding: 14px 0 70px 0;
+  padding: 14px 0;
   color: #FA382F;
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
@@ -232,6 +344,8 @@ ul[title]::before {
   width: 22px;
   height: auto;
 }
+
+/*** FOOTER ***/
 
 footer {
   height: 183px;
@@ -254,4 +368,114 @@ footer h4 {
 .author-name {
   padding-top: 20px;
   font-weight: 700;
+}
+
+/*** MEDIA QUERIES ***/
+
+@media (min-width: 668px) {
+
+}
+
+@media (min-width: 1250px) {
+
+  h1 {
+    align-self: center;
+    padding: 0;
+    font-size: 83px;
+    line-height: 83px;
+  }
+
+  h2 {
+    font-size: 50px;
+    padding-bottom: 80px;
+  }
+
+  .portfolio, .name {
+    font-size: 28px;
+    align-self: end;
+    padding: 0;
+  }
+
+  header {
+    height: 655px;
+  }
+
+  .profile-key-words {
+    justify-content: center;
+    margin: 0 auto;
+    grid-template-columns: 218px 870px;
+    height: 570px;
+    padding: 105px 10% 0 10%;
+  }
+
+  .social-media {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .icon-link {
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .icon-link img {
+    width: 39px;
+    height: auto;
+  }
+
+  .profile {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    margin: 0;
+  }
+
+  .profile img {
+    align-self: flex-end;
+    width: 330px;
+    height: 330px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+  }
+
+  .portfolio, .name {
+    font-size: 28px;
+  }
+
+  .summary, .tech-listing, .skill-lists {
+    margin: 0 auto;
+    padding: 50px 10%;
+    max-width: 1088px;
+  }
+
+  .project-container, .thought {
+    max-width: 544px;
+  }
+
+  .summary, .tech-listing {
+    font-size: 30px;
+  }
+
+  .skill-lists {
+
+  }
+
+  ul {
+    width: 33%;
+    font-size: 25px;
+  }
+
+  ul[title]::before {
+    font-size: 25px;
+  }
+
+  .social-media-2 {
+    margin: 0 auto;
+    padding: 50px 10%;
+    max-width: 1088px;
+  }
 }

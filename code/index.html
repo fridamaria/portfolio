@@ -15,23 +15,17 @@
 
   <header>
     <section class="profile-key-words">
-      <nav class="social-media">
-        <a href="https://www.linkedin.com/in/frida-eriksson-97570943/" title="LinkedIn profile">
-          <p class="icon-container">
-            <img src="./assets/iconmonstr-linkedin-1.svg" alt="LinkedIn icon">
-          </p>
+      <div class="social-media">
+        <a class="icon-link" href="https://www.linkedin.com/in/frida-eriksson-97570943/" title="LinkedIn profile">
+          <img src="./assets/iconmonstr-linkedin-1.svg" alt="LinkedIn icon">
         </a>
-        <a href="https://github.com/fridamaria" title="Github profile">
-          <p class="icon-container">
-            <img src="./assets/github.svg" alt="Github icon">
-          </p>
+        <a class="icon-link" href="https://github.com/fridamaria" title="Github profile">
+          <img src="./assets/github.svg" alt="Github icon">
         </a>
-        <a href="https://stackoverflow.com/users/12678617/fridamaria" title="Stackoverflow profile">
-          <p class="icon-container">
-            <img src="./assets/93ae73c51933403f4cf8512e8cf05115.svg" alt="Stack overflow icon">
-          </p>
+        <a class="icon-link" href="https://stackoverflow.com/users/12678617/fridamaria" title="Stackoverflow profile">
+          <img src="./assets/93ae73c51933403f4cf8512e8cf05115.svg" alt="Stack overflow icon">
         </a>
-      </nav>
+      </div>
       <h3 class="portfolio">PORTFOLIO:</h3>
       <h3 class="name">FRIDA ERIKSSON</h3>
       <h1>frontend developer</h1>
@@ -43,36 +37,143 @@
   </header>
 
   <main>
-    <section class="summary">
-      <p>
+    <section class="portfolio-container primary">
+      <p class="summary">
+        <span class="line-symbol"></span>
         Hello! I’m a strategic and creative senior art director/digital designer with frontend developer skills and
         experience design at heart. I’m all about solving problems that matter and creating awesome, meaningful products
         for people to love.
       </p>
     </section>
 
-    <section class="tech">
+    <section class="portfolio-container">
       <h4>TECH</h4>
-      <p>
+      <p class="tech-listing">
         HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux, Node.js, Mongo DB, Web Accessibly, API:s,
         mob-programming, pair-programming, Github.
       </p>
 
     </section>
 
-    <section class="projects">
+    <section class="portfolio-container primary">
       <h4>FEATURED PROJECTS</h4>
 
+      <article class="project-container">
+        <a href="">
+          <div class="project-1-image">
+            <p class="project-title">SUNNY SIDE UP</p>
+          </div>
+          <section class="project-description">
+            <span class="featured-project">WEATHER APP.</span>
+            <span class="featured-sentence">
+              Web app build in Javascript using open weather API </span><span class="link-arrows">>></span>
+          </section>
+          <section class="code-tag-container">
+            <div class="code-tag">HTML5</div>
+            <div class="code-tag">CSS3</div>
+            <div class="code-tag">SASS</div>
+            <div class="code-tag">Javascript ES6</div>
+          </section>
+        </a>
+      </article>
+
+      <article class="project-container">
+        <a href="">
+          <div class="project-1-image">
+            <p class="project-title">SUNNY SIDE UP</p>
+          </div>
+          <section class="project-description">
+            <span class="featured-project">WEATHER APP.</span>
+            <span class="featured-sentence">
+              Web app build in Javascript using open weather API</span> <span class="link-arrows">>></span>
+          </section>
+          <section class="code-tag-container">
+            <div class="code-tag">HTML5</div>
+            <div class="code-tag">CSS3</div>
+            <div class="code-tag">SASS</div>
+            <div class="code-tag">Javascript ES6</div>
+          </section>
+        </a>
+      </article>
+
       <h5>OTHER PROJECTS</h5>
+
+      <article class="project-container">
+        <a href="">
+          <section class="project-description">
+            <span class="featured-project">WEATHER APP.</span>
+            <span class="featured-sentence">
+              Web app build in Javascript using open weather API</span> <span class="link-arrows">>></span>
+          </section>
+          <section class="code-tag-container">
+            <div class="code-tag">HTML5</div>
+            <div class="code-tag">CSS3</div>
+            <div class="code-tag">SASS</div>
+            <div class="code-tag">Javascript ES6</div>
+          </section>
+        </a>
+      </article>
+
+      <article class="project-container">
+        <a href="">
+          <section class="project-description">
+            <span class="featured-project">WEATHER APP.</span>
+            <span class="featured-sentence">
+              Web app build in Javascript using open weather API</span> <span class="link-arrows">>></span>
+
+          </section>
+          <section class="code-tag-container">
+            <div class="code-tag">HTML5</div>
+            <div class="code-tag">CSS3</div>
+            <div class="code-tag">SASS</div>
+            <div class="code-tag">Javascript ES6</div>
+          </section>
+        </a>
+      </article>
+
+      <article class="project-container">
+        <a href="">
+          <section class="project-description">
+            <span class="featured-project">WEATHER APP.</span>
+            <span class="featured-sentence">
+              Web app build in Javascript using open weather API </span>
+            <span class="link-arrows">>></span>
+          </section>
+          <section class="code-tag-container">
+            <div class="code-tag">HTML5</div>
+            <div class="code-tag">CSS3</div>
+            <div class="code-tag">SASS</div>
+            <div class="code-tag">Javascript ES6</div>
+          </section>
+        </a>
+      </article>
+
     </section>
 
-    <section class="thoughts">
+    <section class="portfolio-container">
       <h4>MY THOUGHTS</h4>
+
+      <article class="thought">
+        <img src="./assets/Thoughts.png" alt="Computer screen illustration">
+        <section class="thoughts-text-content">
+          <p class="thoughts-date">DEC 2019</p>
+          <h6 class="thoughts-title">How to stop being scared: Learning to love code</h6>
+          <p class="thoughts-intro">Writing code is less about “just working”. Instead, it’s much more about
+            creativity.
+            It’s similar to creative
+            writing in that the author architecting a story must use an assortment of tools and components (i.e.,
+            content)
+            in such a way to satisfy a particular objective.
+            <br>
+            <span class="link-arrows">>>
+            </span></p>
+        </section>
+      </article>
 
       <h5>MORE THOUGHTS</h5>
     </section>
 
-    <section class="skills">
+    <section class="portfolio-container primary">
       <h4>SKILLS</h4>
       <section class="skill-lists">
         <ul title="CODE">
@@ -105,7 +206,7 @@
       </section>
     </section>
 
-    <section class="more">
+    <section class="portfolio-container">
       <h4>FOR MORE</h4>
       <nav class="social-media-2">
         <a href="https://www.linkedin.com/in/frida-eriksson-97570943/" title="Linkedin profile">
