@@ -195,20 +195,34 @@ main {
 
 /*** PROJECTS ***/
 
-.project-1-image {
+.project-1-image, .project-2-image, .project-3-image, .project-4-image {
   display: flex;
   justify-content: center;
   margin-top: 34px;
   width: 100%;
   height: 179px;
-  background-image: url(./assets/Project.png);
   background-repeat: no-repeat;
-  background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  box-shadow: inset 0 0 0 100vmax rgba(23, 3, 3, 0.5);
+  box-shadow: inset 0 0 0 100vmax rgba(23, 3, 3, 0.7);
+}
+
+.project-1-image {
+  background-image: url(./assets/weather-project.png)
+}
+
+.project-2-image {
+  background-image: url(./assets/cluedo-project.png)
+}
+
+.project-3-image {
+  background-image: url(./assets/pizza-project.png)
+}
+
+.project-4-image {
+  background-image: url(./assets/news-project.png)
 }
 
 .project-title {
@@ -409,6 +423,17 @@ footer h4 {
   font-weight: 700;
 }
 
+.credit {
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.credit a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
 /*** MEDIA QUERIES ***/
 
 @media (min-width: 680px) {
@@ -430,6 +455,7 @@ footer h4 {
 
   .project-container, .thought-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -525,7 +551,7 @@ footer h4 {
     font-size: 16px;
   }
 
-  .project-1-image {
+  .project-1-image, .project-2-image, .project-3-image, .project-4-image {
     height: 250px;
   }
 
@@ -627,7 +653,7 @@ footer h4 {
     font-size: 30px;
   }
 
-  .project-1-image {
+  .project-1-image, .project-2-image, .project-3-image, .project-4-image {
     height: 300px;
   }
 
