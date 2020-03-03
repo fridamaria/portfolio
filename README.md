@@ -15,4 +15,4 @@ Portfolio putting HTML and CSS skills to the test, featuring projects, some pers
 
 ## View it live
 
-View the site here:
+View the site here: https://fridamaria.netlify.com/
