@@ -453,13 +453,12 @@ footer h4 {
     line-height: 60px;
   }
 
-  h2 {
+  h2, h4 {
     font-size: 35px;
-    padding-bottom: 80px;
   }
 
-  h4 {
-    font-size: 35px;
+  h2 {
+    padding-bottom: 80px;
   }
 
   h5 {
@@ -510,15 +509,15 @@ footer h4 {
     height: 250px;
   }
 
-  .summary, .tech-listing, .skill-lists, .project-container, .project-container-small, .thought-container, .thought-container-small {
+  .summary, .tech-listing, .skill-lists, .project-container, .project-container-small, .thought-container, .thought-container-small, .social-media-2 {
     max-width: 1088px;
   }
 
-  .summary, .tech-listing {
+  .summary, .tech-listing, .thoughts-title {
     font-size: 25px;
   }
 
-  .project-title, .project-description {
+  .project-title, .project-description, .thoughts-date, .thoughts-date-small, .thoughts-intro, .thoughts-title-small, .link-arrows, .link-arrows-small, ul, ul[title]::before, .link-name {
     font-size: 20px;
   }
 
@@ -539,14 +538,6 @@ footer h4 {
     line-height: 35px;
   }
 
-  .thoughts-title {
-    font-size: 25px;
-  }
-
-  .thoughts-date, .thoughts-date-small, .thoughts-intro, .thoughts-title-small, .link-arrows, .link-arrows-small, ul, ul[title]::before {
-    font-size: 20px;
-  }
-
   ul {
     width: 33%;
   }
@@ -554,7 +545,6 @@ footer h4 {
   .social-media-2 {
     margin: 0 auto;
     padding: 50px 10%;
-    max-width: 1088px;
   }
 
   .icon-container-more {
@@ -564,10 +554,6 @@ footer h4 {
 
   .icon-container-more img {
     width: 50px;
-  }
-
-  .link-name {
-    font-size: 20px;
   }
 
   footer {
@@ -637,7 +623,7 @@ footer h4 {
     height: 330px;
   }
 
-  .summary, .tech-listing {
+  .summary, .tech-listing, .thoughts-title {
     font-size: 30px;
   }
 
@@ -649,20 +635,12 @@ footer h4 {
     width: 45%
   }
 
-  .project-title, .project-description {
+  .project-title, .project-description, .thoughts-date, .thoughts-date-small, .thoughts-intro, .thoughts-title-small, .link-arrows, .link-arrows-small, ul, ul[title]::before, .link-name {
     font-size: 25px;
   }
 
   .thoughts-text-content {
     line-height: 41px;
-  }
-
-  .thoughts-title {
-    font-size: 30px;
-  }
-
-  .thoughts-date, .thoughts-date-small, .thoughts-intro, .thoughts-title-small, .link-arrows, .link-arrows-small, ul, ul[title]::before, .link-name {
-    font-size: 25px;
   }
 
   .icon-container-more {
