@@ -250,7 +250,7 @@ main {
 
 .thought img {
   width: 100%;
-  height: 179px;
+  height: 100%;
   margin-top: 34px;
 }
 
@@ -411,50 +411,70 @@ footer h4 {
 
 /*** MEDIA QUERIES ***/
 
-@media (min-width: 550px) {
+@media (min-width: 680px) {
+
+  h5 {
+    margin-bottom: 0;
+  }
 
   .profile-key-words {
     grid-template-columns: 80px 65%;
     padding: 105px 10% 0 10%;
   }
 
+  .summary, .tech-listing, .skill-lists, .project-container, .project-container-small, .thought-container, .thought-container-small {
+    margin: 0 auto;
+    padding: 50px 10%;
+    max-width: 550px;
+  }
+
+  .project-container, .thought-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .project-card, .thought {
+    width: 48%
+  }
+
+  .thought img {
+    height: auto;
+    max-height: 200px;
+  }
+
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1050px) {
 
   h1 {
     align-self: center;
     padding: 0;
-    font-size: 83px;
-    line-height: 83px;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   h2 {
-    font-size: 50px;
+    font-size: 35px;
     padding-bottom: 80px;
   }
 
   h4 {
-    font-size: 48px;
+    font-size: 35px;
   }
 
   h5 {
-    font-size: 38px;
+    font-size: 30px;
   }
 
   .portfolio, .name {
-    font-size: 28px;
+    font-size: 20px;
     align-self: end;
     padding: 0;
   }
 
-  header {
-    height: 655px;
-  }
-
   .profile-key-words {
-    grid-template-columns: 218px 870px;
-    height: 570px;
+    grid-template-columns: 120px 80%;
+    height: 420px;
     padding: 105px 10% 0 10%;
   }
 
@@ -465,12 +485,12 @@ footer h4 {
 
   .icon-link {
     margin-left: 10px;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
   }
   
   .icon-link img {
-    width: 39px;
+    width: 25px;
     height: auto;
   }
 
@@ -486,66 +506,49 @@ footer h4 {
 
   .profile img {
     align-self: flex-end;
-    width: 330px;
-    height: 330px;
-    border: 3px solid #ffffff;
-    border-radius: 50%;
-  }
-
-  .portfolio, .name {
-    font-size: 28px;
+    width: 250px;
+    height: 250px;
   }
 
   .summary, .tech-listing, .skill-lists, .project-container, .project-container-small, .thought-container, .thought-container-small {
-    margin: 0 auto;
-    padding: 50px 10%;
     max-width: 1088px;
   }
 
-  .project-title, .project-description {
+  .summary, .tech-listing {
     font-size: 25px;
+  }
+
+  .project-title, .project-description {
+    font-size: 20px;
   }
 
   .code-tag {
     font-size: 16px;
   }
 
-  .summary, .tech-listing {
-    font-size: 30px;
+  .project-1-image {
+    height: 250px;
   }
 
-  .project-container, .thought-container {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .project-card, .thought {
-    width: 45%
-  }
-
-  .project-1-image, .thought img {
-    height: 280px;
+  .thought img {
+    height: auto;
+    max-height: 350px;
   }
 
   .thoughts-text-content {
-    line-height: 41px;
+    line-height: 35px;
   }
 
   .thoughts-title {
-    font-size: 30px;
+    font-size: 25px;
   }
 
-  .thoughts-date, .thoughts-date-small, .thoughts-intro, .thoughts-title-small, .link-arrows, .link-arrows-small {
-    font-size: 25px;
+  .thoughts-date, .thoughts-date-small, .thoughts-intro, .thoughts-title-small, .link-arrows, .link-arrows-small, ul, ul[title]::before {
+    font-size: 20px;
   }
 
   ul {
     width: 33%;
-    font-size: 25px;
-  }
-
-  ul[title]::before {
-    font-size: 25px;
   }
 
   .social-media-2 {
@@ -555,17 +558,16 @@ footer h4 {
   }
 
   .icon-container-more {
-    width: 154px;
-    height: 154px;
+    width: 120px;
+    height: 120px;
   }
 
   .icon-container-more img {
-    width: 60px;
-    height: auto;
+    width: 50px;
   }
 
   .link-name {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   footer {
@@ -586,8 +588,90 @@ footer h4 {
     padding-top: 30px;
     font-weight: 400;
   }
+
 }
 
 @media (min-width: 1450px) {
+  
+  h1 {
+    font-size: 83px;
+    line-height: 83px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  h4 {
+    font-size: 48px;
+  }
+
+  h5 {
+    font-size: 38px;
+  }
+
+  header {
+    height: 655px;
+  }
+
+  .profile-key-words {
+    grid-template-columns: 170px 918px;
+    height: 570px;
+  }
+
+  .icon-link {
+    width: 80px;
+    height: 80px;
+  }
+
+  .icon-link img {
+    width: 39px;
+  }
+
+  .portfolio, .name {
+    font-size: 28px;
+  }
+
+  .profile img {
+    width: 330px;
+    height: 330px;
+  }
+
+  .summary, .tech-listing {
+    font-size: 30px;
+  }
+
+  .project-1-image {
+    height: 300px;
+  }
+
+  .project-card, .thought {
+    width: 45%
+  }
+
+  .project-title, .project-description {
+    font-size: 25px;
+  }
+
+  .thoughts-text-content {
+    line-height: 41px;
+  }
+
+  .thoughts-title {
+    font-size: 30px;
+  }
+
+  .thoughts-date, .thoughts-date-small, .thoughts-intro, .thoughts-title-small, .link-arrows, .link-arrows-small, ul, ul[title]::before, .link-name {
+    font-size: 25px;
+  }
+
+  .icon-container-more {
+    width: 154px;
+    height: 154px;
+  }
+
+  .icon-container-more img {
+    width: 60px;
+  }
 
 }
