@@ -15,23 +15,23 @@
 
 <body>
 
-  <header aria-labelledby="portfolio-name">
+  <header>
 
     <section class="profile-key-words">
 
-      <div class="social-media">
+      <section class="social-media" aria-label="Profile on different networks">
         <a class="icon-link" href="https://www.linkedin.com/in/frida-eriksson-97570943/">
-          <img src="./assets/iconmonstr-linkedin-1.svg" alt="LinkedIn profile">
+          <img src="./assets/iconmonstr-linkedin-1.svg" alt="LinkedIn icon">
         </a>
         <a class="icon-link" href="https://github.com/fridamaria">
-          <img src="./assets/github.svg" alt="Github profile">
+          <img src="./assets/github.svg" alt="Github icon">
         </a>
         <a class="icon-link" href="https://stackoverflow.com/users/12678617/fridamaria">
-          <img src="./assets/93ae73c51933403f4cf8512e8cf05115.svg" alt="Stack overflow profile">
+          <img src="./assets/93ae73c51933403f4cf8512e8cf05115.svg" alt="Stack overflow icon">
         </a>
-      </div>
+      </section>
 
-      <h3 class="portfolio" id="portfolio-name">PORTFOLIO: <span class="name">FRIDA ERIKSSON</span></h3>
+      <h3 class="portfolio">PORTFOLIO: <span class="name">FRIDA ERIKSSON</span></h3>
       <h1>frontend developer</h1>
       <h2>+ project manager</h2>
       <img class="profile" src="./assets/Profil.jpg" alt="profile picture">
@@ -41,15 +41,15 @@
   </header>
 
   <main>
-    <section aria-labelledby="introduction" class="portfolio-container primary">
-      <p class="summary" id="introduction">
+    <section class="portfolio-container primary" aria-label="Introduction">
+      <p class="summary">
         <span class="line-symbol" aria-hidden="true"></span>
         Hello! I’m a strategic and creative project manager with frontend developer skills. I’m all about solving
         problems in a way that is both structured and inventive, creating fun products for everyone to enjoy.
       </p>
     </section>
 
-    <section class="portfolio-container">
+    <section class="portfolio-container" aria-label="Listing technoligies in repertoire">
       <h4>TECH</h4>
       <p class="tech-listing">
         HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux, Node.js, Mongo DB, Web Accessibility,
@@ -58,40 +58,41 @@
 
     </section>
 
-    <section class="portfolio-container primary">
+    <section class="portfolio-container primary" aria-label="Projects with Github links">
 
       <h4>FEATURED PROJECTS</h4>
 
-      <section class="project-container">
+      <div class="project-container">
         <a class="project-card" href="https://github.com/fridamaria/project-weather-app">
           <div class="project-1-image">
             <p class="project-title">SUNNY SIDE UP</p>
           </div>
-          <section class="project-description">
+          <section class="project-description" aria-label="Project description">
             <span class="featured-project">WEATHER APP.</span>
             <span class="featured-sentence">
               Web app built in Javascript using the Open Weather API </span>
             <span class="link-arrows" aria-hidden="true">>></span>
           </section>
-          <section class="code-tag-container">
+
+          <section class="code-tag-container" aria-label="Code tags">
             <div class="code-tag">HTML5</div>
             <div class="code-tag">CSS3</div>
             <div class="code-tag">Javascript ES6</div>
             <div class="code-tag">API</div>
           </section>
         </a>
-
         <a class="project-card" href="https://github.com/fridamaria/project-cluedo">
           <div class="project-2-image">
             <p class="project-title">MURDER MYSTERY</p>
           </div>
-          <section class="project-description">
+
+          <section class="project-description" aria-label="Project description">
             <span class="featured-project">CLUEDO SIMULATOR.</span>
             <span class="featured-sentence">
               Three decks of cards simulating killer, weapon and room </span>
             <span class="link-arrows" aria-hidden="true">>></span>
           </section>
-          <section class="code-tag-container">
+          <section class="code-tag-container" aria-label="Code tags">
             <div class="code-tag">HTML5</div>
             <div class="code-tag">CSS3</div>
             <div class="code-tag">Javascript ES6</div>
@@ -102,13 +103,13 @@
           <div class="project-3-image">
             <p class="project-title">PIZZA PARTY</p>
           </div>
-          <section class="project-description">
+          <section class="project-description" aria-label="Project description">
             <span class="featured-project">PIZZA ORDERING SITE.</span>
             <span class="featured-sentence">
               Pair-progamming exercise building a simple pizza ordering site </span>
             <span class="link-arrows" aria-hidden="true">>></span>
           </section>
-          <section class="code-tag-container">
+          <section class="code-tag-container" aria-label="Code tags">
             <div class="code-tag">HTML5</div>
             <div class="code-tag">CSS3</div>
             <div class="code-tag">Javascript ES6</div>
@@ -125,24 +126,24 @@
               Small mock news site focusing on bananas </span>
             <span class="link-arrows" aria-hidden="true">>></span>
           </section>
-          <section class="code-tag-container">
+          <section class="code-tag-container" aria-label="Code tags">
             <div class="code-tag">HTML5</div>
             <div class="code-tag">CSS3</div>
           </section>
         </a>
-      </section>
+      </div>
 
       <h5>OTHER PROJECTS</h5>
 
-      <section class="project-container-small">
+      <div class="project-container-small">
         <a class="project-card-small" href="https://github.com/fridamaria/project-food-hippos">
-          <section class="project-description">
+          <section class="project-description" aria-label="Project description">
             <span class="featured-project">FOOD SITE.</span>
             <span class="featured-sentence">
               Group project site listing restaurants, reviews and information based on the Zomato API </span>
             <span class="link-arrows" aria-hidden="true">>></span>
           </section>
-          <section class="code-tag-container">
+          <section class="code-tag-container" aria-label="Code tags">
             <div class="code-tag">HTML5</div>
             <div class="code-tag">CSS3</div>
             <div class="code-tag">Javascript ES6</div>
@@ -151,13 +152,13 @@
         </a>
 
         <a class="project-card-small" href="https://github.com/fridamaria/project-business-site">
-          <section class="project-description">
+          <section class="project-description" aria-label="Project description">
             <span class="featured-project">BUSINESS SITE.</span>
             <span class="featured-sentence">
               Small business site with hero video header and simple sign-up form </span>
             <span class="link-arrows" aria-hidden="true">>></span>
           </section>
-          <section class="code-tag-container">
+          <section class="code-tag-container" aria-label="Code tags">
             <div class="code-tag">HTML5</div>
             <div class="code-tag">CSS3</div>
             <div class="code-tag">Javascript ES6</div>
@@ -165,29 +166,29 @@
         </a>
 
         <a class="project-card-small" href="https://github.com/fridamaria/portfolio">
-          <section class="project-description">
+          <section class="project-description" aria-label="Project description">
             <span class="featured-project">PORTFOLIO.</span>
             <span class="featured-sentence">
               Portfolio displaying several code projects </span>
             <span class="link-arrows" aria-hidden="true">>></span>
           </section>
-          <section class="code-tag-container">
+          <section class="code-tag-container" aria-label="Code tags">
             <div class="code-tag">HTML5</div>
             <div class="code-tag">CSS3</div>
           </section>
         </a>
-      </section>
+      </div>
 
     </section>
 
-    <section class="portfolio-container">
+    <section class="portfolio-container" aria-label="Links to my thoughts on programming">
 
       <h4>MY THOUGHTS</h4>
 
-      <section class="thought-container">
+      <div class="thought-container">
         <a class="thought" href="https://www.linkedin.com/pulse/new-challenges-frida-eriksson/">
           <img src="./assets/challenges-thoughts.png" alt="Notebook in front of laptop">
-          <section class="thoughts-text-content">
+          <section class="thoughts-text-content" aria-label="Article excerpt">
             <p class="thoughts-date">FEB 2020</p>
             <h6 class="thoughts-title">New challenges</h6>
             <p class="thoughts-intro">I started the year with a challenge by attending the Technigo frontend boot camp.
@@ -202,7 +203,7 @@
 
         <a class="thought" href="">
           <img src="./assets/Thoughts.png" alt="Computer screen illustration">
-          <section class="thoughts-text-content">
+          <section class="thoughts-text-content" aria-label="Article excerpt">
             <p class="thoughts-date">DEC 2019</p>
             <h6 class="thoughts-title">How to stop being scared: Learning to love code</h6>
             <p class="thoughts-intro">Writing code is less about “just working”. Instead, it’s much more about
@@ -213,13 +214,13 @@
               </span></p>
           </section>
         </a>
-      </section>
+      </div>
 
       <h5>MORE THOUGHTS</h5>
 
-      <section class="thought-container-small">
+      <div class="thought-container-small">
         <a class="thought-small" href="">
-          <section class="thoughts-text-content-small">
+          <section class="thoughts-text-content-small" aria-label="Article excerpt">
             <p class="thoughts-date-small">SEP 2019</p>
             <h6 class="thoughts-title-small">5 Apps that will make coding easier.</h6>
             <span class="link-arrows-small" aria-hidden="true">>>
@@ -228,7 +229,7 @@
         </a>
 
         <a class="thought-small" href="">
-          <section class="thoughts-text-content-small">
+          <section class="thoughts-text-content-small" aria-label="Article excerpt">
             <p class="thoughts-date-small">SEP 2019</p>
             <h6 class="thoughts-title-small">5 Apps that will make coding easier.</h6>
             <span class="link-arrows-small" aria-hidden="true">>>
@@ -237,7 +238,7 @@
         </a>
 
         <a class="thought-small" href="">
-          <section class="thoughts-text-content-small">
+          <section class="thoughts-text-content-small" aria-label="Article excerpt">
             <p class="thoughts-date-small">SEP 2019</p>
             <h6 class="thoughts-title-small">5 Apps that will make coding easier.</h6>
             <span class="link-arrows-small" aria-hidden="true">>>
@@ -246,14 +247,14 @@
         </a>
 
         <a class="thought-small" href="">
-          <section class="thoughts-text-content-small">
+          <section class="thoughts-text-content-small" aria-label="Article excerpt">
             <p class="thoughts-date-small">SEP 2019</p>
             <h6 class="thoughts-title-small">5 Apps that will make coding easier.</h6>
             <span class="link-arrows-small" aria-hidden="true">>>
             </span>
           </section>
         </a>
-      </section>
+      </div>
 
 
     </section>
@@ -262,35 +263,47 @@
 
       <h4>SKILLS</h4>
 
-      <section class="skill-lists">
-        <ul title="CODE">
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Javascript ES6</li>
-          <li>Git</li>
-        </ul>
+      <div class="skill-lists">
+        <div class="list">
+          <h6 class="list-title">CODE</h6>
+          <ul title="CODE">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Javascript ES6</li>
+            <li>Git</li>
+          </ul>
+        </div>
 
-        <ul title="TOOLS">
-          <li>VS Code</li>
-          <li>GitHub</li>
-          <li>Slack</li>
-          <li>Trello</li>
-        </ul>
+        <div class="list">
+          <h6 class="list-title">TOOLS</h6>
+          <ul title="TOOLS">
+            <li>VS Code</li>
+            <li>GitHub</li>
+            <li>Slack</li>
+            <li>Trello</li>
+          </ul>
+        </div>
 
-        <ul title="UPCOMING">
-          <li>React</li>
-          <li>Node.js</li>
-          <li>MongoDB</li>
-          <li>Redux</li>
-        </ul>
+        <div class="list">
+          <h6 class="list-title">UPCOMPING</h6>
+          <ul title="UPCOMING">
+            <li>React</li>
+            <li>Node.js</li>
+            <li>MongoDB</li>
+            <li>Redux</li>
+          </ul>
+        </div>
 
-        <ul title="MORE">
-          <li>Project Mgmt</li>
-          <li>SCM</li>
-          <li>Education Mgmt</li>
-          <li>Strategy</li>
-        </ul>
-      </section>
+        <div class="list">
+          <h6 class="list-title">MORE</h6>
+          <ul title="MORE">
+            <li>Project Mgmt</li>
+            <li>SCM</li>
+            <li>Education Mgmt</li>
+            <li>Strategy</li>
+          </ul>
+        </div>
+      </div>
 
     </section>
 
@@ -305,12 +318,14 @@
           </div>
           <p class="link-name">LINKEDIN</p>
         </a>
+
         <a href="https://github.com/fridamaria" title="Github profile">
           <div class="icon-container-more">
             <img src="./assets/github-1.svg" alt="Github icon">
           </div>
           <p class="link-name">GITHUB</p>
         </a>
+
         <a href="https://stackoverflow.com/users/12678617/fridamaria" title="Stackoverflow profile">
           <div class="icon-container-more">
             <img src="./assets/93ae73c51933403f4cf8512e8cf05115-1.svg" alt="Stack overflow icon">
@@ -322,7 +337,7 @@
 
   </main>
 
-  <footer>
+  <footer aria-label="Contact information and credits">
     <h4 class="contact-info">CONTACT</h4>
     <p class="author-name">Frida Eriksson</p>
     <p class="contact-details">+46 70 00 00 00</p>

@@ -305,11 +305,12 @@ main {
   display: inline;
 }
 
-.link-arrows-small {
+.link-arrows, .link-arrows-small {
   color: #573139;
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
   font-weight: 700;
+  text-decoration: underline;
 }
 
 /*** SKILLS ***/
@@ -317,15 +318,21 @@ main {
 .skill-lists {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding-top: 34px;
 }
 
+.list {
+  width: 42%;
+  margin: 10px;
+}
+
 ul {
-  width: 50%;
+  
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
   list-style-type: none;
-  margin: 0 0 30px 0;
+  margin: 0;
   padding: 0;
   text-align: center;
 }
@@ -334,9 +341,10 @@ li {
   padding: 3px 0;
 }
 
-ul[title]::before {
+.list-title {
   content: attr(title);
   display: block;
+  margin: 0;
   padding-bottom: 6px;
   color: #573139;
   font-family: 'Roboto', sans-serif;
@@ -527,7 +535,7 @@ footer h4 {
     font-size: 25px;
   }
 
-  .project-title, .project-description, .thoughts-date, .thoughts-date-small, .thoughts-intro, .thoughts-title-small, .link-arrows, .link-arrows-small, ul, ul[title]::before, .link-name {
+  .project-title, .project-description, .thoughts-date, .thoughts-date-small, .thoughts-intro, .thoughts-title-small, .link-arrows, .link-arrows-small, ul, .list-title, .link-name {
     font-size: 20px;
   }
 
@@ -548,8 +556,8 @@ footer h4 {
     line-height: 35px;
   }
 
-  ul {
-    width: 33%;
+  .list {
+    width: 30%;
   }
 
   .social-media-2 {
@@ -649,7 +657,7 @@ footer h4 {
     width: 45%
   }
 
-  .project-title, .project-description, .thoughts-date, .thoughts-date-small, .thoughts-intro, .thoughts-title-small, .link-arrows, .link-arrows-small, ul, ul[title]::before, .link-name {
+  .project-title, .project-description, .thoughts-date, .thoughts-date-small, .thoughts-intro, .thoughts-title-small, .link-arrows, .link-arrows-small, ul, .list-title, .link-name {
     font-size: 25px;
   }
 
