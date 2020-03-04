@@ -203,19 +203,19 @@ main {
 }
 
 .project-1-image {
-  background-image: url(./assets/weather-project.png)
+  background-image: url(./assets/weather-project.png);
 }
 
 .project-2-image {
-  background-image: url(./assets/cluedo-project.png)
+  background-image: url(./assets/cluedo-project.png);
 }
 
 .project-3-image {
-  background-image: url(./assets/pizza-project.png)
+  background-image: url(./assets/pizza-project.png);
 }
 
 .project-4-image {
-  background-image: url(./assets/news-project.png)
+  background-image: url(./assets/news-project.png);
 }
 
 .project-title {
@@ -427,7 +427,7 @@ footer h4 {
 .credit {
   margin-top: 20px;
   color: #ffffff;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .credit a {
@@ -512,12 +512,17 @@ footer h4 {
   .icon-link {
     margin-left: 10px;
     width: 50px;
-    height: 50px;
+    height: 50px; 
   }
   
   .icon-link img {
     width: 25px;
     height: auto;
+    transition: transform .5s, filter .5s ease-out;
+  }
+
+  .icon-link img:hover {
+    transform: scale(1.1);
   }
 
   .profile {
@@ -533,6 +538,10 @@ footer h4 {
 
   .summary, .tech-listing, .thoughts-title {
     font-size: 25px;
+  }
+
+  .line-symbol {
+    top: 14px;
   }
 
   .project-title, .project-description, .thoughts-date, .thoughts-date-small, .thoughts-intro, .thoughts-title-small, .link-arrows, .link-arrows-small, ul, .list-title, .link-name {
@@ -572,6 +581,11 @@ footer h4 {
 
   .icon-container-more img {
     width: 50px;
+    transition: transform .5s, filter .5s ease-out;
+  }
+  
+  .icon-container-more img:hover {
+    transform: scale(1.1);
   }
 
   footer {
@@ -639,10 +653,6 @@ footer h4 {
   .profile {
     width: 330px;
     height: 330px;
-  }
-
-  .line-symbol {
-    top: 14px;
   }
 
   .summary, .tech-listing, .thoughts-title {
