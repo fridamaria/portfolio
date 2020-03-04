@@ -26,7 +26,8 @@ h2 {
   grid-column-end: 3;
   grid-row-start: 4;
   margin: 0;
-  padding-top: 1px;
+  padding-bottom: 30px;
+
 }
 
 h3, h6 {
@@ -107,32 +108,24 @@ header {
 
 .portfolio {
   grid-column-start: 1;
-  font-weight: 400;
-}
-
-.name {
-  grid-column-start: 2;
-  font-weight: 700;
-}
-
-.portfolio, .name {
   grid-column-end: 3;
   grid-row-start: 2;
   padding: 32px 0 0 0;
   margin: 0;
   font-size: 13px;
+  font-weight: 400;
+}
+
+.name {
+  font-weight: 700;
 }
 
 .profile {
   grid-column-start: 2;
   grid-row-start: 5;
-  display: flex;
-  justify-content: flex-end;
+  justify-self: flex-end;
+  align-self: flex-end;
   margin: 0;
-  padding-top: 34px;
-}
-
-.profile img {
   width: 156px;
   height: 156px;
   border: 3px solid #ffffff;
@@ -470,7 +463,7 @@ footer h4 {
 
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1020px) {
 
   h1 {
     align-self: center;
@@ -491,7 +484,7 @@ footer h4 {
     font-size: 30px;
   }
 
-  .portfolio, .name {
+  .portfolio {
     font-size: 20px;
     align-self: end;
     padding: 0;
@@ -520,17 +513,8 @@ footer h4 {
   }
 
   .profile {
-    grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 6;
-    display: flex;
-    justify-content: flex-end;
-    align-content: flex-end;
-    margin: 0;
-  }
-
-  .profile img {
-    align-self: flex-end;
     width: 250px;
     height: 250px;
   }
@@ -640,13 +624,17 @@ footer h4 {
     width: 39px;
   }
 
-  .portfolio, .name {
+  .portfolio {
     font-size: 28px;
   }
 
-  .profile img {
+  .profile {
     width: 330px;
     height: 330px;
+  }
+
+  .line-symbol {
+    top: 14px;
   }
 
   .summary, .tech-listing, .thoughts-title {

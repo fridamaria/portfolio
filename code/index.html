@@ -15,37 +15,34 @@
 
 <body>
 
-  <header>
+  <header aria-labelledby="portfolio-name">
 
     <section class="profile-key-words">
 
       <div class="social-media">
         <a class="icon-link" href="https://www.linkedin.com/in/frida-eriksson-97570943/">
-          <img src="./assets/iconmonstr-linkedin-1.svg" alt="LinkedIn icon profile">
+          <img src="./assets/iconmonstr-linkedin-1.svg" alt="LinkedIn profile">
         </a>
         <a class="icon-link" href="https://github.com/fridamaria">
-          <img src="./assets/github.svg" alt="Github icon profile">
+          <img src="./assets/github.svg" alt="Github profile">
         </a>
         <a class="icon-link" href="https://stackoverflow.com/users/12678617/fridamaria">
-          <img src="./assets/93ae73c51933403f4cf8512e8cf05115.svg" alt="Stack overflow icon profile">
+          <img src="./assets/93ae73c51933403f4cf8512e8cf05115.svg" alt="Stack overflow profile">
         </a>
       </div>
 
-      <h3 class="portfolio">PORTFOLIO:</h3>
-      <h3 class="name">FRIDA ERIKSSON</h3>
+      <h3 class="portfolio" id="portfolio-name">PORTFOLIO: <span class="name">FRIDA ERIKSSON</span></h3>
       <h1>frontend developer</h1>
       <h2>+ project manager</h2>
-      <figure class="profile">
-        <img src="./assets/Profil.jpg" alt="profile picture">
-      </figure>
+      <img class="profile" src="./assets/Profil.jpg" alt="profile picture">
 
     </section>
 
   </header>
 
   <main>
-    <section class="portfolio-container primary">
-      <p class="summary">
+    <section aria-labelledby="introduction" class="portfolio-container primary">
+      <p class="summary" id="introduction">
         <span class="line-symbol" aria-hidden="true"></span>
         Hello! I’m a strategic and creative project manager with frontend developer skills. I’m all about solving
         problems in a way that is both structured and inventive, creating fun products for everyone to enjoy.
