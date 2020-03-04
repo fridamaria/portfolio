@@ -37,12 +37,12 @@ h3, h6 {
 h4 {
   display: inline;
   padding: 3px 10px;
-  background: #FA382F;
+  background: #573139;
   font-size: 22px;
 }
 
 h5 {
-  color: #FA382F;
+  color: #573139;
   font-size: 21px;
 }
 
@@ -164,7 +164,7 @@ main {
   top: 10px;
   width: 50px;
   height: 2px;
-  background: #FA382F;
+  background: #573139;
 }
 
 .line-symbol::after {
@@ -176,7 +176,7 @@ main {
   top: -4px;
   right: -1px;
   border-radius: 50%;
-  background: #FA382F;
+  background: #573139;
 }
 
 /*** TECH ***/
@@ -220,7 +220,7 @@ main {
 
 .project-title {
   padding-top: 20%;
-  color: #FDDFE7;
+  color: #f9ecec;
   font-size: 16px;
   font-weight: 700;
 }
@@ -232,7 +232,7 @@ main {
 }
 
 .featured-project, .link-arrows {
-  color: #FA382F;
+  color: #573139;
   font-weight: 700;
 }
 
@@ -247,7 +247,7 @@ main {
 .code-tag {
   margin: 20px 4px 9px 0;
   padding: 4px 8px;
-  background: #FDDFE7;
+  background: #f3d4d4;
   color: #000000;
   font-family: 'Roboto', sans-serif;
   font-size: 9px;
@@ -268,7 +268,7 @@ main {
 .thoughts-date, .thoughts-date-small {
   margin: 0;
   padding-top: 10px;
-  color: #FA382F;
+  color: #573139;
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
 }
@@ -306,7 +306,7 @@ main {
 }
 
 .link-arrows-small {
-  color: #FA382F;
+  color: #573139;
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
   font-weight: 700;
@@ -338,7 +338,7 @@ ul[title]::before {
   content: attr(title);
   display: block;
   padding-bottom: 6px;
-  color: #FA382F;
+  color: #573139;
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
   font-weight: bold;
@@ -368,14 +368,14 @@ ul[title]::before {
   margin: 0;
   width: 53px;
   height: 53px;
-  border: 3px solid #FA382F;
+  border: 3px solid #573139;
   border-radius: 50%;
 }
 
 .link-name {
   margin: 0;
   padding: 14px 0;
-  color: #FA382F;
+  color: #573139;
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
   font-weight: bold;
@@ -394,7 +394,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   height: 266px;
-  background: #072BCE;
+  background: #52563c;
   text-align: center;
 }
 
