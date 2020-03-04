@@ -219,8 +219,8 @@ main {
 }
 
 .project-title {
-  padding-top: 20%;
-  color: #f9ecec;
+  align-self: center;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
 }
