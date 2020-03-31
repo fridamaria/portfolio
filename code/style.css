@@ -566,6 +566,7 @@ footer h4 {
   }
 
   .list {
+    display: grid;
     width: 30%;
   }
 
