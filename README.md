@@ -19,4 +19,4 @@ The project included a set design that I used when creating my portfolio. A lot 
 
 ## View it live
 
-View the site here: https://fridamaria.netlify.com/
+https://fridamaria.netlify.com/
