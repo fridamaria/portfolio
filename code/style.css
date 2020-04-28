@@ -243,6 +243,7 @@ main {
 
 .code-tag-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .code-tag {
