@@ -244,10 +244,11 @@ main {
 .code-tag-container {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .code-tag {
-  margin: 20px 4px 9px 0;
+  margin: 9px 4px 9px 0;
   padding: 4px 8px;
   background: #f3d4d4;
   color: #000000;
